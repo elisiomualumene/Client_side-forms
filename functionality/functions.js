@@ -18,5 +18,5 @@ send.addEventListener('click', function(){
 })
 
 //I'm so Tired I will do It another day :)
-//Now I will comit this version on my github origin
+//Now I will push this version on my github origin
 //But I don't will merge now!
