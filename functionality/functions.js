@@ -1,22 +1,41 @@
-let input_name = document.querySelector("#input_name")
-// Get a input named "#input_name"
-let send = document.querySelector("#submit")
-// Get a buttom with your ID named "#submit"
-let container_msg = document.querySelector('#inputfield_name')
-// Get a div named "#inputfield_name"
-let msg = document.querySelector('#first')
-// to show a error menssage
-msg.style.display = 'none'
-// to hide this menssage
+// Here a put all inputs
+let input_name = document.querySelector('#input_name')
+
+let input_phone = document.querySelector('#input_phone')
+
+let input_email = document.querySelector('#input_email')
+
+let send = document.querySelector('#submit')
+//INPUTS
+
+//Here I put all menssages and displays
+let msg1 = document.querySelector('#alert1')
+let msg2 = document.querySelector('#alert2')
+let msg3 = document.querySelector('.checked')
+
+msg1.style.display = 'none'
+msg2.style.display = 'none'
+msg3.style.display = 'none'
+msg1.style.color = 'red'
+msg2.style.color = 'red'
+// menssages and displays
+
 send.addEventListener('click', function(){
-//a event listener to call a function on buttom click
-    if(input_name.value == 0){ // here i'm doing a validation
-        msg.style.display = 'block';
-        msg.style.display = 'none';
+    if( input_name.value == 0 || input_phone.value == 0 || input_email.value == 0){
+        msg1.style.display = 'block'
+    }
+    
+    else if(input_phone.value.length < 9){
+        msg2.style.display = 'block'
+    }
+    else{
+        msg3.style.display = 'block'
+        input_name.value = "";
+        input_phone.value = "";
+        input_email.value = "";
     }
 
+/* 
+I need to do a validation in my email, but I can't do that, so if somebody can do it I will be thanked
+*/
 })
-
-//I'm so Tired I will do It another day :)
-//Now I will push this version on my github origin
-//But I don't will merge now!

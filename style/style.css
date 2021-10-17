@@ -42,14 +42,6 @@ h1{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
 #inputfield_phone p{
     color: white;
     margin: 0px 0px 05px 50px;
@@ -57,7 +49,6 @@ h1{
     font-weight: bold;
     font-size: 25px;
 }
-
 
 #input_phone{
     margin-bottom: 3rem;
@@ -70,8 +61,6 @@ h1{
     text-align: center;
 }
 
-
-
 #inputfield_email p{
     color: white;
     margin: 0px 0px 05px 50px;
@@ -79,7 +68,6 @@ h1{
     font-weight: bold;
     font-size: 25px;
 }
-
 
 #input_email{
     margin-bottom: 1rem;
@@ -107,4 +95,42 @@ h1{
 
 #submit:hover{
     background: linear-gradient(90deg, #957efa, #fa7ee9);
+}
+
+.alert1{
+    background-color: white;
+    border-radius: 3rem;
+    height: 1.5rem;
+    width: 300px;
+    margin: auto auto 2rem auto;
+    font-size: 18px;
+}
+
+#alert2{
+    background-color: white;
+    border-radius: 3rem;
+    height: 1.5rem;
+    width: 300px;
+    margin: auto auto 2rem auto;
+    font-size: 18px;
+}
+
+.checked{
+    background-color: white;
+    border-radius: 3rem;
+    height: 1.5rem;
+    width: 300px;
+    margin: 2rem
+     auto 2rem auto;
+    font-size: 18px;
+}
+
+.checked img{
+    position: relative;
+    display: flex;
+    top: -06px;
+    left: 3px;
+    width: 20px;
+}.checked p{
+    color: green;
 }

@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>Client Side Form</h1>
-        <h5 id="first">Please Enter a Value to Continiu</h5>
+        <h5 id="alert1" class="alert1">Please Enter a Value to Confirm!</h5>
         <div id="inputfield_name">
             <p>Nome</p>
             <input type="text" id="input_name" placeholder="Enter Your Name">
@@ -20,15 +20,24 @@
         <div id="inputfield_phone">
             <p>Phone</p>
             <input type="number" id="input_phone" placeholder="Enter your Phone Number">
+            <h5 id="alert2">This number is invalid!</h5>
         </div>
         
         <div id="inputfield_email">
             <p>Email</p>
             <input type="email" id="input_email" placeholder="Enter your email">
+            
         </div>
-
         <input type="submit" value="Submit" id="submit">
+
+        
+    <div class="checked">
+        <p>Your form was sending sucessfully!</p>
+        <img src="icons/check.png" alt="checked icon">
+        <p onclick="window.location.reload(false)">Click to reload the form</p>
     </div>
+    </div>
+
 
     <script src="functionality/functions.js"></script>
 </body>
